@@ -9,12 +9,17 @@
 /* Begin PBXBuildFile section */
 		0B67A88B2BBA3C3D003A7D91 /* AfricaGameApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A88A2BBA3C3D003A7D91 /* AfricaGameApp.swift */; };
 		0B67A88D2BBA3C3D003A7D91 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A88C2BBA3C3D003A7D91 /* ContentView.swift */; };
-		0B67A88F2BBA3C3D003A7D91 /* Item.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A88E2BBA3C3D003A7D91 /* Item.swift */; };
+		0B67A88F2BBA3C3D003A7D91 /* Game.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A88E2BBA3C3D003A7D91 /* Game.swift */; };
 		0B67A8912BBA3C3F003A7D91 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B67A8902BBA3C3F003A7D91 /* Assets.xcassets */; };
 		0B67A8942BBA3C3F003A7D91 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0B67A8932BBA3C3F003A7D91 /* Preview Assets.xcassets */; };
 		0B67A89E2BBA3C3F003A7D91 /* AfricaGameTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A89D2BBA3C3F003A7D91 /* AfricaGameTests.swift */; };
 		0B67A8A82BBA3C3F003A7D91 /* AfricaGameUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A8A72BBA3C3F003A7D91 /* AfricaGameUITests.swift */; };
 		0B67A8AA2BBA3C3F003A7D91 /* AfricaGameUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A8A92BBA3C3F003A7D91 /* AfricaGameUITestsLaunchTests.swift */; };
+		0B67A9012BC17927003A7D91 /* Player.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A9002BC17927003A7D91 /* Player.swift */; };
+		0B67A9032BC17959003A7D91 /* Team.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A9022BC17959003A7D91 /* Team.swift */; };
+		0B67A9052BC17997003A7D91 /* Turn.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A9042BC17997003A7D91 /* Turn.swift */; };
+		0B67A90A2BC17A6C003A7D91 /* AppState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A9092BC17A6C003A7D91 /* AppState.swift */; };
+		0B67A90C2BC17ABC003A7D91 /* DataContainer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0B67A90B2BC17ABC003A7D91 /* DataContainer.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -38,7 +43,7 @@
 		0B67A8872BBA3C3D003A7D91 /* AfricaGame.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = AfricaGame.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B67A88A2BBA3C3D003A7D91 /* AfricaGameApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaGameApp.swift; sourceTree = "<group>"; };
 		0B67A88C2BBA3C3D003A7D91 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
-		0B67A88E2BBA3C3D003A7D91 /* Item.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Item.swift; sourceTree = "<group>"; };
+		0B67A88E2BBA3C3D003A7D91 /* Game.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Game.swift; sourceTree = "<group>"; };
 		0B67A8902BBA3C3F003A7D91 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0B67A8932BBA3C3F003A7D91 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
 		0B67A8992BBA3C3F003A7D91 /* AfricaGameTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AfricaGameTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -46,6 +51,11 @@
 		0B67A8A32BBA3C3F003A7D91 /* AfricaGameUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = AfricaGameUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		0B67A8A72BBA3C3F003A7D91 /* AfricaGameUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaGameUITests.swift; sourceTree = "<group>"; };
 		0B67A8A92BBA3C3F003A7D91 /* AfricaGameUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AfricaGameUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		0B67A9002BC17927003A7D91 /* Player.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Player.swift; sourceTree = "<group>"; };
+		0B67A9022BC17959003A7D91 /* Team.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Team.swift; sourceTree = "<group>"; };
+		0B67A9042BC17997003A7D91 /* Turn.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Turn.swift; sourceTree = "<group>"; };
+		0B67A9092BC17A6C003A7D91 /* AppState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppState.swift; sourceTree = "<group>"; };
+		0B67A90B2BC17ABC003A7D91 /* DataContainer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataContainer.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,10 +106,10 @@
 		0B67A8892BBA3C3D003A7D91 /* AfricaGame */ = {
 			isa = PBXGroup;
 			children = (
-				0B67A88A2BBA3C3D003A7D91 /* AfricaGameApp.swift */,
-				0B67A88C2BBA3C3D003A7D91 /* ContentView.swift */,
-				0B67A88E2BBA3C3D003A7D91 /* Item.swift */,
-				0B67A8902BBA3C3F003A7D91 /* Assets.xcassets */,
+				0B67A9082BC17A4E003A7D91 /* Features */,
+				0B67A8FF2BC17907003A7D91 /* Data */,
+				0B67A9072BC17A2C003A7D91 /* Resources */,
+				0B67A9062BC17A23003A7D91 /* Sources */,
 				0B67A8922BBA3C3F003A7D91 /* Preview Content */,
 			);
 			path = AfricaGame;
@@ -128,6 +138,43 @@
 				0B67A8A92BBA3C3F003A7D91 /* AfricaGameUITestsLaunchTests.swift */,
 			);
 			path = AfricaGameUITests;
+			sourceTree = "<group>";
+		};
+		0B67A8FF2BC17907003A7D91 /* Data */ = {
+			isa = PBXGroup;
+			children = (
+				0B67A88E2BBA3C3D003A7D91 /* Game.swift */,
+				0B67A9002BC17927003A7D91 /* Player.swift */,
+				0B67A9022BC17959003A7D91 /* Team.swift */,
+				0B67A9042BC17997003A7D91 /* Turn.swift */,
+				0B67A90B2BC17ABC003A7D91 /* DataContainer.swift */,
+			);
+			path = Data;
+			sourceTree = "<group>";
+		};
+		0B67A9062BC17A23003A7D91 /* Sources */ = {
+			isa = PBXGroup;
+			children = (
+				0B67A88A2BBA3C3D003A7D91 /* AfricaGameApp.swift */,
+				0B67A9092BC17A6C003A7D91 /* AppState.swift */,
+			);
+			path = Sources;
+			sourceTree = "<group>";
+		};
+		0B67A9072BC17A2C003A7D91 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				0B67A8902BBA3C3F003A7D91 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		0B67A9082BC17A4E003A7D91 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				0B67A88C2BBA3C3D003A7D91 /* ContentView.swift */,
+			);
+			path = Features;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -260,8 +307,13 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0B67A9012BC17927003A7D91 /* Player.swift in Sources */,
 				0B67A88D2BBA3C3D003A7D91 /* ContentView.swift in Sources */,
-				0B67A88F2BBA3C3D003A7D91 /* Item.swift in Sources */,
+				0B67A90A2BC17A6C003A7D91 /* AppState.swift in Sources */,
+				0B67A90C2BC17ABC003A7D91 /* DataContainer.swift in Sources */,
+				0B67A88F2BBA3C3D003A7D91 /* Game.swift in Sources */,
+				0B67A9032BC17959003A7D91 /* Team.swift in Sources */,
+				0B67A9052BC17997003A7D91 /* Turn.swift in Sources */,
 				0B67A88B2BBA3C3D003A7D91 /* AfricaGameApp.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
