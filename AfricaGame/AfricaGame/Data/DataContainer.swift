@@ -1,18 +1,19 @@
 //
-//  AfricaGameApp.swift
+//  DataContainer.swift
 //  AfricaGame
 //
-//  Created by FilipeSTeodoro on 31/03/24.
+//  Created by FilipeSTeodoro on 06/04/24.
 //
 
-import SwiftUI
+import Foundation
 import SwiftData
 
-@main
-struct AfricaGameApp: App {
-    var sharedModelContainer: ModelContainer = {
+struct DataContainer {
+    static var sharedModelContainer: ModelContainer = {
         let schema = Schema([
-            Item.self,
+            Game.self,
+            Player.self,
+            Team.self
         ])
         let modelConfiguration = ModelConfiguration(schema: schema, isStoredInMemoryOnly: false)
 
@@ -20,13 +21,7 @@ struct AfricaGameApp: App {
             return try ModelContainer(for: schema, configurations: [modelConfiguration])
         } catch {
             fatalError("Could not create ModelContainer: \(error)")
+            // TODO: Add Crashlytics
         }
     }()
-
-    var body: some Scene {
-        WindowGroup {
-            ContentView()
-        }
-        .modelContainer(sharedModelContainer)
-    }
 }
